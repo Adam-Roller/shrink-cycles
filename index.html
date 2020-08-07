@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Canvas Drawing</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="drawing.js"></script>
+	</head>
+	<body onload="setup();">
+        <canvas id="drawing-canvas" width="500" height="500"></canvas>
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="replayDrawing()">Replay</button>
+        <button onclick="setSize(1.0)">100%</button>
+        <button onclick="setSize(.75)">75%</button>
+        <button onclick="setSize(.50)">50%</button>
+        <button onclick="setSize(.25)">25%</button>
+        <div>
+            Accuracy: <span id="accuracy">0</span>%
+        </div>
+        <div>
+            Duration: <span id="duration">0</span>ms
+        </div>
+        <div style="display:none">
+            <img id="traceImg" src="assets/Earth1.svg">
+        </div>
+	</body>
+</html>
